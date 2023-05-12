@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #area {
+        background-color: blueviolet;
+        height: 200px;
+        width: 200px;
+        line-height: 200px;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 20px;
+      }
+    </style>
+    <title>Teste Java</title>
+  </head>
+  <body>
+    <h1><strong>Teste Java</strong></h1>
+
+    <div id="area" onclick="f1()" onmouseenter="f2()" onmouseout="f3()">
+      Clique aqui!
+    </div>
+
+    <script>
+      function f1() {
+        var f1 = window.document.getElementById("area");
+        f1.innerText = "Clicou";
+        f1.style.background = "green";
+      }
+
+      function f2() {
+        var f2 = window.document.getElementById("area");
+        f2.innerText = "Entrou";
+        f2.style.background = "grey";
+      }
+
+      function f3() {
+        var f3 = window.document.getElementById("area");
+        f3.innerText = "Saiu";
+        f3.style.background = "red";
+      }
+    </script>
+  </body>
+</html>
