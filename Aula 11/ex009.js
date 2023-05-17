@@ -5,5 +5,3 @@ if (pais == "Brasil") {
 } else {
   console.log("Estrangeiro(a)");
 }
-
-vel.inner;
