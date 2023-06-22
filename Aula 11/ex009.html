@@ -20,7 +20,8 @@
         var nac = document.getElementById("nacionalidade");
         var res = document.getElementById("res");
         var nac1 = String(nac.value);
-        if (nac == "Brasil" || nac == "brasil") {
+        res.innerHTML = `<p>Você é do País: ${nac1}</p>`;
+        if (nac1 == "Brasil" || nac1 == "brasil") {
           res.innerHTML += "<p>Você é Brasileiro(a)</p>";
         } else {
           res.innerHTML += "<p>You're a foreigner</p>";
