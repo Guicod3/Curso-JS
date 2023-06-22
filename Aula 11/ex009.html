@@ -9,21 +9,21 @@
   <body>
     <h1>Verificador de Estrangeiros</h1>
     <br />
-    <input type="text" name="nacionalidade" id="nacional1" />
+    <p>Digite o País que você nasceu:</p>
+    <input type="text" name="nacionalidade" id="nacionalidade" />
     <input type="button" value="Enviar" onclick="verifyestranger()" />
     <br />
-    <div id="result"></div>
+    <div id="res"></div>
 
     <script>
-      var nac = document.querySelector("input#nacional1");
-      var nac1 = String(nac.value);
-      var space = document.querySelector("div#result");
-
       function verifyestranger() {
-        if ((nac == "Brasil", "brasil", "br")) {
-          space.innerHTML += "<p>Você é Brasileiro(a)</p>";
+        var nac = document.getElementById("nacionalidade");
+        var res = document.getElementById("res");
+        var nac1 = String(nac.value);
+        if (nac == "Brasil" || nac == "brasil") {
+          res.innerHTML += "<p>Você é Brasileiro(a)</p>";
         } else {
-          space.innerHTML += "<p>You re a foreigner</p>";
+          res.innerHTML += "<p>You're a foreigner</p>";
         }
       }
     </script>
