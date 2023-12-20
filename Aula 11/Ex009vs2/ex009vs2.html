@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=ex009vs2.css">
+    <link rel="stylesheet" href="ex009vs2.css">
+    <script src="ex009vs2.js"></script>
     <title>Você é estranjeiro?</title>
-
-    <style>
-        h1{
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
+    <div id="base">
     <H1 id="titulo">Você é estranjeiro?</H1>
     <p>País em que nasceu:</p>
     <input type="text" name="namepais" id="namepais">
-    <input type="button" value="Enviar" id="enviarbutton" onclick="QualPais()">
-    <div id="resposta"></div>
+    <input type="button" value="Enviar" id="enviarbutton" onclick= 'qualpais()'> 
+    </div>
+    <div id="resposta">
+    </div>
 </body>
 </html>

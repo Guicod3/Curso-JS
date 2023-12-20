@@ -1,0 +1,74 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(74, 101, 255)
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+p{
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+#namepais{
+    border-radius: 5px;
+    box-shadow: 0;
+    background-color: rgb(221, 221, 221);
+    border: 0;
+    height: 30px;
+    width: 350px;
+}
+
+#enviarbutton{
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(101, 124, 255);
+    color: white;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#enviarbutton:hover{
+    background-color: rgb(49, 80, 255);
+    color: white;
+}
+
+#base{
+    background-color: white;
+    width: 35%;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#resposta{
+    background-color: white;
+    width: 37%;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-bottom: 0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px;
+    font-size: 1.8em;
+}
