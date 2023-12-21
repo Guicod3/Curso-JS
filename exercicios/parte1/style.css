@@ -7,11 +7,8 @@ body {
 
 header {
   color: white;
-  position: absolute;
-  top: 28%;
-  left: 50%;
-  transform: translate(-50%,-50%);
   text-align: center;
+  margin-top: 70px;
 }
 
 h1{
