@@ -14,7 +14,7 @@ function verificar(){
         } else if (sex[1].checked){
             genero = 'mulher'
         }
-        res.innerHTML = `Detectamos ${genero} com ${idade} anos.`;
+        res.innerHTML = `Detectamos ${genero} com ${idade} ano(s).`;
     } 
 }
 
