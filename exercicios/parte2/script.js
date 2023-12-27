@@ -9,8 +9,13 @@ function verificar(){
         var sex = document.getElementsByName('radsex');
         var idade = ano - Number(iptano.value);
         var genero = ''
+        var img = document.getElementById('foto');
         if (sex[0].checked){
             genero = 'homem'
+            if(idade == 1){
+                //Bebê
+                img.src = 'img/bebehomem.jpg';
+            }
         } else if (sex[1].checked){
             genero = 'mulher'
         }
