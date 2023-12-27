@@ -6,10 +6,16 @@ function verificar(){
     if (iptano.value.length == 0 || Number(iptano.value) >= ano){
         window.alert('[ERRO] Por favor, insira um ano válido.');
     } else{
-        //var sex = document.getElementByname('radsex');
+        var sex = document.getElementsByName('radsex');
         var idade = ano - Number(iptano.value);
-        res.innerHTML = `A idade correspondente é: ${idade} anos`;
-    }
+        var genero = ''
+        if (sex[0].checked){
+            genero = 'homem'
+        } else if (sex[1].checked){
+            genero = 'mulher'
+        }
+        res.innerHTML = `Detectamos ${genero} com ${idade} anos.`;
+    } 
 }
 
 
