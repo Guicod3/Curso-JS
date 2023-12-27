@@ -1,7 +1,9 @@
 @charset 'UTF-8';
 
 body{
-    background-color: blue;
+    background: linear-gradient(to bottom, rgb(50, 98, 255), rgb(52, 38, 255));
+    height: 100vh;
+    background-color:  rgb(33, 92, 255);
     font: bold 15pt Arial;
  }
 
@@ -20,7 +22,37 @@ body{
     margin: auto;
     padding: 15px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.527);
+    text-align: center;
  }
+
+ #button{
+   border-radius: 35px;
+   padding: 10px;
+   border-color: rgba(50, 98, 255, 0);
+   background-color: rgb(50, 98, 255);
+   font-size: 0.8em;
+   font-weight: bold;
+   color: white;
+ }
+
+ #button:hover{
+   border-radius: 35px;
+   padding: 10px;
+   border-color: rgb(50, 98, 255);
+   border
+   border: 1;
+   background-color: white;
+   font-size: 0.8em;
+   font-weight: bold;
+   color: rgb(50, 98, 255);
+ }
+
+#anonasc{
+   border: 0;
+   background-color: rgba(128, 128, 128, 0.13);
+   border-radius: 20px;
+   padding: 2px;
+}
 
  #resultado{
    margin-top: 20px;
