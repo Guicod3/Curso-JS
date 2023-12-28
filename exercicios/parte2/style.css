@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 
 body{
-    background: linear-gradient(to bottom, rgb(50, 98, 255), rgb(52, 38, 255));
+    background: linear-gradient(to bottom, #1b50fc, #cc4dff);
     height: 100vh;
     background-color:  rgb(33, 92, 255);
     font: bold 15pt Arial;
@@ -50,6 +50,10 @@ body{
    background-color: rgba(128, 128, 128, 0.13);
    border-radius: 20px;
    padding: 3px;
+}
+
+#foto{
+   margin-top: 10px;
 }
 
  #resultado{
