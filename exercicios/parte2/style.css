@@ -2,9 +2,11 @@
 
 body{
     background: linear-gradient(to bottom, #1b50fc, #cc4dff);
-    height: 100vh;
+    height: 96vh;
     background-color:  rgb(33, 92, 255);
     font: bold 15pt Arial;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
  }
 
  header{
@@ -46,8 +48,8 @@ body{
  }
 
 #anonasc{
-   border: 0;
-   background-color: rgba(128, 128, 128, 0.13);
+   border:2px solid rgb(255, 255, 255);
+   background-color: rgba(197, 197, 197, 0.76);
    border-radius: 20px;
    padding: 3px;
 }
