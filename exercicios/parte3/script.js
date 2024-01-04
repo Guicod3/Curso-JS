@@ -8,13 +8,23 @@ function contar(){
         window.alert("[ERRO] Insira valores válidos.")
     } else{
         let i = Number(base.value)
-        let f = Number(base.value)
-        let p = Number(base.value)
+        let f = Number(final.value)
+        let p = Number(pulo.value)
 
-        resultado.innerHTML = ('Contando: ')
-
-        for (let c = i; c <= f; c = c + p){
-            resultado.innerHTML += `${c}, `
-        } 
+        resultado.innerHTML = 'Contando: '
+        if (p <= 0){
+            window.alert('VALOR INVÁLIDO, CONSIDERANDO PASSO = 1')
+            p = 1
+        }
+        if (i < f){
+            for (let c = i; c <= f; c += p){
+                resultado.innerHTML += `${c} \u{1F449} `
+            } 
+        } else if(i > f){
+            for (let c = i; c >= f; c -= p){
+                resultado.innerHTML += `${c} \u{1F449} `
+            } 
+        } else if( i == f){
+            window.alert('[ERRO] Valores iguais de início e fim.')
     }
-}
+}}
