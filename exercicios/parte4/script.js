@@ -4,13 +4,14 @@ function tabuada(){
     if (number.value.length == 0){
         window.alert('[ERRO] Valor inserido é inválido.')
     } else {
+        res.innerHTML = ''
         let n = Number(number.value)
-        let r = res
         let v = 0 // VALOR A SER MULTIPLICADO PRIMEIRO) 
-        for( c = v; c <= 11; c + 1){
+        for(c = v; c <= 10; c++){
             let item = document.createElement('option')
             item.text = `${n} x ${c} = ${n*c}`
-            r.appendChild(item)
+            item.value = `res${c}`
+            res.appendChild(item)
         }
     }
 }
