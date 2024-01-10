@@ -12,6 +12,11 @@ section{
     padding: 10px;
 }
 
+#resultado{
+    width: 200px;
+    padding: 3px;
+}
+
 h1{
     color: white;
 }
