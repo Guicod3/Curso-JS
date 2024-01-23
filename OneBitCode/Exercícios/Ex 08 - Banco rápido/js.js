@@ -2,10 +2,10 @@ let valorInicial =  Number(prompt(`BANCO BV\n\nDigite o Valor que deseja deposit
 let valorFinal = valorInicial
 let respostaSaida = document.getElementById('Encerra')
 let respostaf5 = document.getElementById('f5')
-let
+let decisaoAddRet = ''
 
 do{
-    let decisaoAddRet = prompt(`Você tem R$${valorFinal},00. Deseja: \n1. Adicionar dinheiro\n2. Retirar dinheiro\n\n3. Sair`)
+    decisaoAddRet = prompt(`Você tem R$${valorFinal},00. Deseja: \n1. Adicionar dinheiro\n2. Retirar dinheiro\n\n3. Sair`)
     switch(decisaoAddRet){
 
         case '1': let valorADD = Number(prompt(`Digite o valor para adicionar: `))
